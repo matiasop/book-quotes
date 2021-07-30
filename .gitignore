@@ -1,1 +1,34 @@
 my-clippings/__pycache__
+
+# dependencies
+/book-quotes/node_modules
+/book-quotes/.pnp
+/book-quotes/.pnp.js
+
+# testing
+/book-quotes/coverage
+
+# next.js
+/book-quotes/.next/
+/book-quotes/out/
+
+# production
+/book-quotes/build
+
+# misc
+/book-quotes.DS_Store
+/book-quotes*.pem
+
+# debug
+/book-quotes/npm-debug.log*
+/book-quotes/yarn-debug.log*
+/book-quotes/yarn-error.log*
+
+# local env files
+/book-quotes/.env.local
+/book-quotes/.env.development.local
+/book-quotes/.env.test.local
+/book-quotes/.env.production.local
+
+# vercel
+/book-quotes/.vercel
