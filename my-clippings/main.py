@@ -91,7 +91,7 @@ def main():
             quote_complete_dict[title].append(data)
             quote_list.append(data)
 
-    # Create json file with titles as keys
+    # Create json file with titles as keys (OPTIONAL)
     json_quotes = json.dumps(
         quote_dict, ensure_ascii=False, indent=4, sort_keys=True)
     write_quotes('quotes.json', json_quotes)
@@ -101,7 +101,7 @@ def main():
         quote_complete_dict, ensure_ascii=False, indent=4, sort_keys=True)
     write_quotes('quotes_complete.json', json_complete_quotes)
 
-    # Create json file with an array with all quotes
+    # Create json file with an array with all quotes (OPTIONAL)
     json_quotes_list = json.dumps(
         quote_list, ensure_ascii=False, indent=4, sort_keys=False)
     write_quotes('quotes_list.json', json_quotes_list)
