@@ -1,0 +1,30 @@
+.booklist {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  width: 40%;
+  padding: 0 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    width: 70%;
+  }
+}
+
+.link {
+  font-size: large;
+  text-align: left;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

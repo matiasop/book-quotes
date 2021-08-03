@@ -1,0 +1,30 @@
+.navbar {
+  background-color: lightcyan;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* fix navbar */
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.link {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+}
+
+.title {
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  color: rgb(7, 92, 92);
+}
+
+.button:hover {
+  /* font-weight: bold; */
+  color: darkcyan;
+}
