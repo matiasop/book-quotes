@@ -1,7 +1,16 @@
 # book-quotes
 
-Book quotes
+Web page with book quotes from some of the books I've read.
 
-## Get Book ISBN
+Made with `next.js` and `typescript`.
 
-You need make a get request to this url to get the book ISBN: `https://www.googleapis.com/books/v1/volumes?q=intitle:%22cuentos%20completos%22+inauthor:%22jorge%20luis%20borges%22`
+## Build Instructions
+
+- Move `My Clippings.txt` to `./my-clippings`
+- Run `build.sh`
+
+## Page Link
+
+Web Page link [here](https://book-quotes-matiasop11.vercel.app/).
+
+## Screenshots
