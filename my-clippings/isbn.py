@@ -12,7 +12,8 @@ def correct_title(title):
         "La tabla rasa (Steven Pinker)": "The Blank Slate (steven pinker)",
         "Conjuración de Catilina y otros textos (Salustio;Pseudo Salustio;Pseudo Cicerón)": "Conjuración de Catilina",
         "How to DeFi (CoinGecko;Lau, Darren;Lau, Daryl;Teh, Sze Jin;Kho, Kristian;Azmi, Erina;Lee, TM;Ong, Bobby)": "How To Defi",
-        "Que_es_el_hombre_martin_buber (Martin Buber)": "Que es el hombre (Martin Buber)"
+        "Que_es_el_hombre_martin_buber (Martin Buber)": "Que es el hombre (Martin Buber)",
+        "Guerra y paz (Lev Nikoláievich Tolstoi)": "War and Peace",
     }
 
     if title not in correct:
