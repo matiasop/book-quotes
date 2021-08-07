@@ -4,7 +4,9 @@ import getBookList from "../../utils/getBooksList"
 import BookListType from '../../utils/BookListType'
 import getQuotesList from '../../utils/getQuotesList'
 import QuoteType from '../../utils/QuoteType'
+import styles from '../../styles/Quotes.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getBookList(data).map((book: BookListType) => {
@@ -31,14 +33,20 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 const Book = ({ quoteList }: { quoteList: QuoteType[] }) => {
   return (
-    <div>
-      <p>Quote Details</p>
+    <div className={styles.cardContainer}>
       {quoteList.map((q: QuoteType) => (
-        <div key={q.quote_id.toString()}>
+        <div key={q.quote_id.toString()} className={styles.card} >
           <Link href={`/quotes/${q.quote_id.toString()}`}>
-            <a>
-              <h3>{q.book_title}</h3>
-              <p>{q.quote}</p>
+            <a className={styles.flex}>
+              <div className={styles.imageDiv}>
+                <Image className={styles.image} src={String(q.thumbnail) || '/book.jpg'} alt="book" width={150} height={200} />
+              </div>
+              <div className={styles.content}>
+                <h3 className={styles.title}>{q.book_title}</h3>
+                <p className={styles.author}>{q.author}</p>
+                <p className={styles.date}>{q.date}</p>
+                <p className={styles.quote}>{`"${q.quote}"`}</p>
+              </div>
             </a>
           </Link>
         </div>
