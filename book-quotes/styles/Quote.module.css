@@ -1,0 +1,80 @@
+.container {
+  margin: 5.5rem 4rem;
+  display: grid;
+  place-content: center;
+  text-align: left;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 0rem;
+}
+
+.author {
+  color: rgb(84, 84, 84);
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex {
+    display: block;
+  }
+}
+
+.image {
+  z-index: -1;
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.publishedDate {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.readingDate {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.pos {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.isbn {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.lang {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.pages {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+  margin: 0.3rem 0;
+}
+
+.quote {
+  margin: 2rem 0;
+  color: rgb(84, 84, 84);
+  line-height: 1.5rem;
+  font-style: italic;
+  max-width: 50rem;
+}
